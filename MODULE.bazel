@@ -65,7 +65,8 @@ apt.sources_list(
 
 apt.install(
     dependency_set = "bookworm",
-    target_release = "bookworm",
+    # target_release = "bookworm",
+    suites = ["bookworm", "bookworm-updates"],
     packages = [
         "libnl-3-dev",
         "libnl-genl-3-dev",
