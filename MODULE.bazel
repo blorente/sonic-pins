@@ -26,7 +26,7 @@ bazel_dep(name = "protobuf", version = "29.1", repo_name = "com_google_protobuf"
 bazel_dep(name = "rules_distroless", version = "0.0.0")
 local_path_override(
     module_name = "rules_distroless",
-    path = "../rules_distroless"
+    path = "../../bazel-contrib/rules_distroless"
 )
 
 
@@ -114,14 +114,13 @@ local_path_override(
 bazel_dep(name = "p4constraints", repo_name = "com_github_p4lang_p4_constraints")
 local_path_override(
     module_name = "p4constraints",
-    path = "../p4-constraints"
+    path = "../../p4lang/p4-constraints"
 )
-
 
 bazel_dep(name = "p4c", repo_name = "com_github_p4lang_p4c")
 local_path_override(
     module_name = "p4c",
-    path = "../p4c"
+    path = "../../p4lang/p4c"
 )
 
 
@@ -129,7 +128,7 @@ local_path_override(
 bazel_dep(name = "gutil", version = "20250502.0", repo_name = "com_google_gutil")
 local_path_override(
     module_name = "gutil",
-    path = "../gutil"
+    path = "../../google/gutil"
 )
 
 
