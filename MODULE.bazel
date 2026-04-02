@@ -28,11 +28,11 @@ bazel_dep(name = "protobuf", version = "29.1", repo_name = "com_google_protobuf"
 # bazel_dep(name = "openconfig_gnoi", version = "0.6.2", repo_name = "com_github_gnoi")
 # bazel_dep(name = "openconfig_gnmi", version = "0.14.1", repo_name = "com_github_gnmi")
 bazel_dep(name = "rules_distroless", version = "0.0.0")
-local_path_override(
+git_override(
     module_name = "rules_distroless",
-    path = "../rules_distroless"
+    commit = "ebfd74a2e07b83235e064bb63ace98a1a5223e02",
+    remote = "https://github.com/bazel-contrib/rules_distroless",
 )
-
 
 bind = use_extension("@sonic-build-infra//:bind.bzl", "bind")
 bind.alias(
